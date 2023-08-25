@@ -51,7 +51,7 @@ function askQuestions() {
   if (confirmSpecial) {
     passwordRequirements["Special"] = specialCharacters;
   }
-  console.log(passwordRequirements);
+  //   console.log(passwordRequirements);
 }
 
 //write a function that creates randomized password by accessing lists in objects
@@ -60,7 +60,7 @@ function generatePassword(object) {
   for (i = 0; i < lengthOfPassword; i++) {
     var objectLength = Object.keys(passwordRequirements).length;
     var randomNumber = Math.floor(Math.random() * objectLength);
-
+    // I wonder if I can make this into a for loop.
     if (randomNumber === 0) {
       var obj1Length = Object.values(passwordRequirements)[0].length;
       var randomObj1Num = Math.floor(Math.random() * obj1Length);
